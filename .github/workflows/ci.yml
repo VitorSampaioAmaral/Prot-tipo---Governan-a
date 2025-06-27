@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./aluno
+        working-directory: ./src/aluno
     steps:
       - uses: actions/checkout@v3
       - name: Instalar dependências
@@ -43,7 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./professor
+        working-directory: ./src/professor
     steps:
       - uses: actions/checkout@v3
       - name: Instalar dependências
