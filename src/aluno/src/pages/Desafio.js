@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaRobot, FaCheckCircle, FaTimesCircle, FaArrowRight, FaTrophy } from 'react-icons/fa';
 
-// 6 perguntas múltipla escolha (fáceis ao difícil) a
+// 6 perguntas múltipla escolha (fáceis ao difícil) ab
 const perguntas = [
   {
     tipo: 'multipla',
