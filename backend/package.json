@@ -1,0 +1,18 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "echo 'No build step needed for backend'",
+    "test": "echo 'No tests yet'",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "mongoose": "^7.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  }
+} 

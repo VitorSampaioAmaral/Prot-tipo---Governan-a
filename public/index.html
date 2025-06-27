@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ProFuturo - Plataforma Educacional</title>
+    <meta name="description" content="Menu de acesso à plataforma ProFuturo: Professor, Aluno e OfflineBox" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" />
+    <style>
+      body {
+        margin: 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        font-family: 'Segoe UI', Arial, sans-serif;
+      }
+      .menu-container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .menu-card {
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+        padding: 36px 28px;
+        max-width: 350px;
+        width: 100%;
+        text-align: center;
+      }
+      .menu-title {
+        color: #1a237e;
+        font-weight: 800;
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+      .menu-desc {
+        color: #666;
+        font-size: 15px;
+        margin-bottom: 30px;
+      }
+      .menu-btn {
+        width: 100%;
+        padding: 14px;
+        margin: 10px 0;
+        background: #667eea;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 17px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background 0.2s;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+      .menu-btn.aluno { background: #4CAF50; }
+      .menu-btn.offline { background: #FF9800; }
+      .menu-btn:hover { filter: brightness(0.95); }
+    </style>
+  </head>
+  <body>
+    <noscript>Você precisa habilitar o JavaScript para rodar esta aplicação.</noscript>
+    <div id="root">
+      <div class="menu-container">
+        <div class="menu-card">
+          <div class="menu-title">ProFuturo</div>
+          <div class="menu-desc">Escolha como deseja acessar a plataforma:</div>
+          <button class="menu-btn" onclick="window.location.href='/professor/login'">
+            👩‍🏫 Área do Professor
+          </button>
+          <button class="menu-btn aluno" onclick="window.location.href='/aluno/login'">
+            👦 Área do Aluno
+          </button>
+          <button class="menu-btn offline" onclick="window.open('/offlinebox', '_blank')">
+            📦 OfflineBox
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html> 
