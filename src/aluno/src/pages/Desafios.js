@@ -90,7 +90,7 @@ const quizzes = [
 export default function Desafios({ aluno, maestria, setMaestria }) {
   const navigate = useNavigate();
 
-  // Atualiza maestria ao montar
+  // Atualiza maestria ao montar 
   useEffect(() => {
     if (!aluno) return;
     const novaMaestria = {};
